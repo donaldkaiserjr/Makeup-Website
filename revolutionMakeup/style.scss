@@ -1,0 +1,146 @@
+/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$mainBkgrd: #fff5e6;  // main background color
+$txtColor:  #696969;   // h1 and p tag colors
+$contColor: #ffd5c6;  // container color
+$blkCaseClr: #0c1301;   // black Case color
+$caseClr:  #9c9999;    //black case Title Color
+$bxContClr: #0c1301;   //box container color within black case
+$bxDefaultClr: #6d2e2e;    // Default color for each box before auto coloring 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sweet Sans Regular", Helvetica,sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  background-color: $mainBkgrd;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  color: $txtColor;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  
+}
+
+p {
+  margin-top: 1px;
+  color: $txtColor;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: .19em;
+  
+}
+.container {
+  background-color: $contColor;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  /* align-items: stretch; */
+  max-height: 84vh;
+  width: 95vw;
+  border-radius: 4px;
+}
+
+
+.black-case {
+  background-color:	$blkCaseClr;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 89.5vh;
+  min-width: 20vw;
+}
+
+@media only screen and (max-width: 1160px)  {
+  .black-case {
+    height: 80vh;
+    max-width: 30vw;
+    
+  }
+}
+
+@media only screen and (max-width: 841px)  {
+  .black-case {
+    height: 70vh;
+    max-width: 43%;    
+  }
+}
+
+/* @media only screen and (min-width: 541px)  {
+  .black-case {
+    height: 35vh;
+    max-width: 75%;
+    margin: 10px;
+  }
+} */
+
+
+.case-title {
+  margin: 0;
+  padding: 0;
+}
+
+.case-title h2 {
+  /* border: 3px solid red; */
+  margin: 0px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  height: 8%;
+  color: #9c9999;
+  font-weight: 300;
+  letter-spacing: .19em;
+  padding: .51em;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 841px)  {
+  .case-title h2 {
+    font-size: .8rem;
+    
+  }
+}
+
+
+
+.box-container {
+  background-color:	$bxContClr;
+  height: 82vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.box {
+  background-color: $bxDefaultClr;
+  flex: 0 0 27%;
+  margin: 8px;
+  border: none;
+  border-radius: 20px;
+  max-height: 33%; 
+  max-width: 33%;
+  cursor: pointer; 
+  /* border: 5px solid white; */
+}
+
+
+
