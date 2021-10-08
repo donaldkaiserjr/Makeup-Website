@@ -67,6 +67,13 @@ p {
   border-radius: 4px;
 }
 
+@media only screen and (max-width: 1160px) {
+  .container {
+    max-height: 77vh;
+    width: 86vw;
+  }
+}
+
 .black-case {
   background-color: #0c1301;
   border-radius: 20px;

@@ -57,7 +57,13 @@ p {
   width: 95vw;
   border-radius: 4px;
 }
-
+@media only screen and (max-width: 1160px)  {
+  .container {
+    max-height: 77vh;
+    width: 86vw
+    
+  }
+}
 
 .black-case {
   background-color:	$blkCaseClr;
