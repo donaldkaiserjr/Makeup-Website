@@ -48,8 +48,9 @@ p {
   background-color: $contColor;
   padding: 100px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap; // note flex-flow is a combo of flex-direction & flex wrap
+  // flex-direction: row;
+  // flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   /* align-items: stretch; */
