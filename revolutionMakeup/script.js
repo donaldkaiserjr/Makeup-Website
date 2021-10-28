@@ -41,7 +41,6 @@ boxes.forEach((box) => {
   }, 2000);
 });
 
-
 function pickRandomColor(colors) {
 
   let randomIndex = Math.floor(Math.random() * colors.length);
