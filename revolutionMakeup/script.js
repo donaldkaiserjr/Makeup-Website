@@ -42,7 +42,6 @@ boxes.forEach((box) => {
 });
 
 function pickRandomColor(colors) {
-
   let randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];
 }
