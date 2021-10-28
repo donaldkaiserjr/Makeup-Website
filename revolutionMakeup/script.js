@@ -51,7 +51,6 @@ function highlightBox(box) {
   return box.classList.toggle("active");
 }
 
-
 function insertColor(box) {
   const colorBox = (box.style.backgroundColor = pickRandomColor(colors));
   return colorBox
