@@ -52,6 +52,5 @@ function highlightBox(box) {
 
 function insertColor(box) {
   const colorBox = (box.style.backgroundColor = pickRandomColor(colors));
-  return colorBox
-      
+  return colorBox   
 }
