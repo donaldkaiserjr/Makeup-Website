@@ -1,6 +1,6 @@
 "use strict"
 
-const boxes = document.querySelectorAll(".box");
+const boxes = document.querySelectorAll(".box"); 
 
 const colors = [
   "#2a5470",
